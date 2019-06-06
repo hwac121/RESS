@@ -8,7 +8,7 @@ you point the script at.
 
 INSTRUCTIONS
 ---------------------------------------
-1. git clone
+1. git clone https://github.com/hwac121/RESS.git
 2. cd RESS
 3. sudo ./install.sh
 4. Type ress anywhere to begin
