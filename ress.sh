@@ -4,9 +4,9 @@ clear
 #================================================================================================
 #                                       SELECTION MENU
 #================================================================================================
-options=("java, js, json, pl, py, sh" "js, json, py, sh" "java, js, json" "js, json" "sh, py" "java" "js" "json" "pl" "py" "sh" "Help" "Quit")
+options=("java, js, json, pl, py, sh" "js, json, py, sh" "java, js, json" "js, json" "sh, py" "java" "js" "json" "pl" "py" "sh" "Help" "Credits" "Quit")
 
-PS3="Choose which files to make executable or 13 to Quit: "
+PS3="Choose which files to make executable or 14 to Quit: "
 
 while [ "$menu" != 1 ]; do
 echo "###################################################"
@@ -64,6 +64,7 @@ sleep 0.5
 				echo -e " "
 				find $DirVar -type f -iname "*.sh" -exec chmod +x {} \;
 				sleep 1.5
+				echo -e " "
 				clear
 				echo -e "Process Completed"
 				date
@@ -96,6 +97,7 @@ sleep 0.5
 				find $DirVar -type f -iname "*.sh" -exec chmod +x {} \;
 				sleep 1.5
 				echo -e " "
+				clear
 				echo -e "Process Completed"
 				date
 				echo -e " "
@@ -123,6 +125,7 @@ sleep 0.5
 				find $DirVar -type f -iname "*.json" -exec chmod +x {} \;
 				sleep 1.5
 				echo -e " "
+				clear
 				echo -e "Process Completed"
 				date
 				echo -e " "
@@ -146,6 +149,7 @@ sleep 0.5
 				find $DirVar -type f -iname "*.json" -exec chmod +x {} \;
 				sleep 1.5
 				echo -e " "
+				clear
 				echo -e "Process Completed"
 				date
 				echo -e " "
@@ -169,6 +173,7 @@ sleep 0.5
 				find $DirVar -type f -iname "*.py" -exec chmod +x {} \;
 				sleep 1.5
 				echo -e " "
+				clear
 				echo -e "Process Completed"
 				date
 				echo -e " "
@@ -188,6 +193,7 @@ sleep 0.5
 				find $DirVar -type f -iname "*.java" -exec chmod +x {} \;
 				sleep 1.5
 				echo -e " "
+				clear
 				echo -e "Process Completed"
 				date
 				echo -e " "
@@ -207,6 +213,7 @@ sleep 0.5
 				find $DirVar -type f -iname "*.js" -exec chmod +x {} \;
 				sleep 1.5
 				echo -e " "
+				clear
 				echo -e "Process Completed"
 				date
 				echo -e " "
@@ -226,6 +233,7 @@ sleep 0.5
 				find $DirVar -type f -iname "*.json" -exec chmod +x {} \;
 				sleep 1.5
 				echo -e " "
+				clear
 				echo -e "Process Completed"
 				date
 				echo -e " "
@@ -245,6 +253,7 @@ sleep 0.5
 				find $DirVar -type f -iname "*.pl" -exec chmod +x {} \;
 				sleep 1.5
 				echo -e " "
+				clear
 				echo -e "Process Completed"
 				date
 				echo -e " "
@@ -264,6 +273,7 @@ sleep 0.5
 				find $DirVar -type f -iname "*.py" -exec chmod +x {} \;
 				sleep 1.5
 				echo -e " "
+				clear
 				echo -e "Process Completed"
 				date
 				echo -e " "
@@ -283,6 +293,7 @@ sleep 0.5
 				find $DirVar -type f -iname "*.sh" -exec chmod +x {} \;
 				sleep 1.5
 				echo -e " "
+				clear
 				echo -e "Process Completed"
 				date
 				echo -e " "
@@ -290,6 +301,7 @@ sleep 0.5
         break
 		;;
 			"Help")
+				clear
 				echo -e " "
 				echo -e "R.E.S.S. or Recursively Executable Shell Script will automatically make all the script files of your"
 				echo "choice executable for quicker installs."
@@ -300,7 +312,22 @@ sleep 0.5
 				echo -e " "
 		break
 		;;
+			"Credits")
+				clear
+				echo -e " "
+				echo -e "Developed by hwac121"
+				sleep 1.5
+				echo -e "Written: June of 2019"
+				sleep 1.5
+				echo -e " "
+				echo -e "URL: http://www.majikcat.com"
+				sleep 3.0 
+				echo -e " "
+				clear
+		break
+		;;
 			"Quit")
+				clear
 				echo -e " "
 				echo -e "Thank you for using RESS by hwac121 - 2019"
 				menu=1
