@@ -4,9 +4,9 @@ clear
 #================================================================================================
 #                                       SELECTION MENU
 #================================================================================================
-options=("java, js, json, pl, py, sh" "js, json, py, sh" "java, js, json" "js, json" "sh, py" "java" "js" "json" "pl" "py" "sh" "Help" "Credits" "Quit")
+options=("java, js, json, pl, py, sh" "js, json, py, pl, sh" "js, json, py, sh" "java, js, json" "js, json" "sh, py" "java" "js" "json" "pl" "py" "sh" "Help" "Credits" "Quit")
 
-PS3="Choose which files to make executable or 14 to Quit: "
+PS3="Choose which files to make executable or 15 to Quit: "
 
 while [ "$menu" != 1 ]; do
 echo "###################################################"
@@ -59,6 +59,42 @@ sleep 0.5
 				echo -e "Making all py files executable"
 				echo -e " "
 				find $DirVar -type f -iname "*.py" -exec chmod +x {} \;
+				sleep 1.5
+				echo -e "Making all sh files executable"
+				echo -e " "
+				find $DirVar -type f -iname "*.sh" -exec chmod +x {} \;
+				sleep 1.5
+				echo -e " "
+				clear
+				echo -e "Process Completed"
+				date
+				echo -e " "
+				echo -e " "
+        break
+		;;
+			"js, json, py, pl, sh")
+				echo -e " "
+				echo -e "Enter the path to the directory that contains the files you need to make executable then hit ENTER..."
+				read DirVar
+				sleep 1.5
+				echo -e " "
+				echo -e "You chose Option: $REPLY for $opt files in $DirVar - Executing script actions..."
+				sleep 1.5
+				echo -e "Making all js files executable"
+				echo -e " "
+				find $DirVar -type f -iname "*.js" -exec chmod +x {} \;
+				sleep 1.5
+				echo -e "Making all json files executable"
+				echo -e " "
+				find $DirVar -type f -iname "*.json" -exec chmod +x {} \;
+				sleep 1.5
+				echo -e "Making all py files executable"
+				echo -e " "
+				find $DirVar -type f -iname "*.py" -exec chmod +x {} \;
+				sleep 1.5
+				echo -e "Making all pl files executable"
+				echo -e " "
+				find $DirVar -type f -iname "*.pl" -exec chmod +x {} \;
 				sleep 1.5
 				echo -e "Making all sh files executable"
 				echo -e " "
