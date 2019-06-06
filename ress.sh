@@ -1,5 +1,15 @@
 #!/bin/bash
 
+#================================================================================================
+#                                   CHECK IF ROOT OR EXIT
+#================================================================================================
+if [ "$EUID" -ne 0 ]
+  then echo "Please run as root or sudo ./ress or sudo ress"
+  exit
+fi
+#================================================================================================
+#                                 CLEAR THE SCREEN TO BEGIN
+#================================================================================================
 clear
 #================================================================================================
 #                                       SELECTION MENU
@@ -18,15 +28,6 @@ sleep 0.2
 echo "#                                                 #"
 sleep 0.2
 echo "###################################################"
-sleep 0.2
-echo " "
-sleep 0.2
-echo "RESS v1.0"
-sleep 0.5
-echo "by hwac121"
-sleep 0.5
-echo "http://www.majikcat.com"
-sleep 0.5
 echo " "
 sleep 0.5
 	select opt in "${options[@]}"; do
@@ -356,8 +357,14 @@ sleep 0.5
 				echo -e "Written: June of 2019"
 				sleep 1.5
 				echo -e " "
-				echo -e "URL: http://www.majikcat.com"
-				sleep 3.0 
+				echo -e "Web URL: http://www.majikcat.com"
+				sleep 1.5
+				echo -e "GitHub: https://github.com/hwac121"
+				sleep 1.5
+				echo -e "eMail: hwac121@protonmail.com"
+				sleep 1.5
+				echo -e "Donatations accepted via paypal - rjlemail@gmail.com"
+				sleep 5.0 
 				echo -e " "
 				clear
 		break
