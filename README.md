@@ -16,3 +16,5 @@ INSTRUCTIONS
 NOTE: MUST put correct and full path in when requested in order for script to work properly! Full and 
 complete error catching code is not included yet but will be implemented in future versions. 
 Use at your own risk!
+
+Tested and developed on Parrot Security OS, should run fine on all Debian releases, haven't tested on anything else but it is pretty standard.
