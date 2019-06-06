@@ -1,9 +1,10 @@
 # RESS v1.0
 Recursively Executable Shell Script
 ---------------------------------------
-Developed by: hwac121
-Email: hwac121@protonmail.com
-URL: http://www.majikcat.com
+Developed by: hwac121 - Email: hwac121@protonmail.com - URL: http://www.majikcat.com
+
+This will make all files of your choosing executable automatically within the directory 
+you point the script at.
 
 INSTRUCTIONS
 ---------------------------------------
