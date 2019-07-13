@@ -318,7 +318,7 @@ sleep 0.75
 				echo -e " "
 				echo -e "You chose Option: $REPLY for $opt files in $DirVar - Executing script actions..."
 				sleep 1.5
-				echo -e "Making alll py files executable"
+				echo -e "Making all py files executable"
 				echo -e " "
 				find $DirVar -type f -iname "*.py" -exec chmod +x {} \;
 				sleep 1.5
