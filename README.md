@@ -16,3 +16,5 @@ INSTRUCTIONS
 NOTE: MUST put correct and full path in when requested in order for script to work properly! Full and 
 complete error catching code is not included yet but will be implemented in future versions. 
 Use at your own risk!
+
+THIS IS ORIGINAL SOFTWARE - You are free to use and modify this software as you please, all I ask is give me credit as the original author.
